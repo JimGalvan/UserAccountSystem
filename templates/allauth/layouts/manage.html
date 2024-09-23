@@ -18,20 +18,6 @@
                            href="{{ change_password_url_ }}">Change Password</a>
                     </li>
                 {% endif %}
-                {% url 'socialaccount_connections' as connections_url_ %}
-                {% if connections_url_ %}
-                    <li class="nav-item">
-                        <a class="{% block nav_class_socialaccount %}nav-link text-white{% endblock %}"
-                           href="{{ connections_url_ }}">Third-Party Accounts</a>
-                    </li>
-                {% endif %}
-                {% url 'mfa_index' as mfa_index_url_ %}
-                {% if mfa_index_url_ %}
-                    <li class="nav-item">
-                        <a class="{% block nav_class_mfa %}nav-link text-white{% endblock %}"
-                           href="{{ mfa_index_url_ }}">Two-Factor Authentication</a>
-                    </li>
-                {% endif %}
                 {% url 'usersessions_list' as usersessions_list_url_ %}
                 {% if usersessions_list_url_ %}
                     <li class="nav-item">
